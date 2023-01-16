@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@500;900&display=swap');
+
+:root {
+  --ryza-dust: rgba(241, 103, 24, 1);
+  --mock-orange: rgba(255, 155, 98, 1);
+  --cool-balaclavas-are-forever: rgba(22, 37, 66, 1);
+  --purple-impression: rgba(123, 139, 173, 1);
+  --distant-wind-chime: rgba(232, 239, 242, 1);
+  --white: rgba(255, 255, 255);
+}
+
+body {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  font-family: 'Barlow', sans-serif;
+  margin: 64px 165px;
+}
+
+h1,
+h2,
+h3 {
+  color: var(--cool-balaclavas-are-forever);
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+h1 {
+  font-size: 56px;
+  line-height: 56px;
+}
+
+h2 {
+  font-size: 32px;
+  line-height: 36px;
+}
+
+h3 {
+
+  font-size: 24px;
+  line-height: 28px;
+}
+
+p {
+  color: var(--purple-impression);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 26px;
+}
