@@ -1,0 +1,354 @@
+/** Default Desktop Version **/
+header {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.btn-1 {
+  background-color: var(--distant-wind-chime);
+  color: var(--cool-balaclavas-are-forever);
+  transition: color 0.4s;
+}
+
+.btn-1:hover {
+  color: var(--white);
+  background-color: var(--cool-balaclavas-are-forever);
+}
+
+.top-section {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 83px;
+  width: 100%;
+}
+
+.top-section div {
+  width: 400px;
+}
+
+.top-section div div {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px;
+  width: 340px;
+}
+
+.btn-2 {
+  background-color: var(--ryza-dust);
+  color: var(--white);
+}
+
+.btn-2:hover {
+  background-color: var(--mock-orange);
+}
+
+.top-section div div span {
+  color: var(--purple-impression);
+  font-family: 'Barlow', sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 26px;
+  text-transform: uppercase;
+}
+
+.img-keyboard {
+  border-radius: 20px;
+  height: 480px;
+  width: 540px;
+}
+
+.pattern-square-1 {
+  object-position: 128px 0px;
+  position: absolute;
+  top: 205px;
+  right: 0;
+  z-index: -1;
+}
+
+.middle-section {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 28px;
+  width: 100%;
+}
+
+.pattern-square-2 {
+  object-position: -128px 0px;
+  position: absolute;
+  top: 953px;
+  left: 0px;
+  z-index: -1;
+}
+
+.cover {
+  display: flex;
+}
+
+.img-phone-and-keyobard {
+  border-radius: 20px;
+  opacity: 0.75;
+  height: 480px;
+  width: 255px;
+}
+
+.orange-bg {
+  background-color: var(--ryza-dust);
+  border-radius: 20px;
+  mix-blend-mode: multiply;
+  opacity: 1;
+  position: absolute;
+  height: 480px;
+  width: 255px;
+}
+
+.img-glass-and-keyboard {
+  border-radius: 20px;
+  margin-left: 10px;
+  height: 480px;
+  width: 445px;
+  z-index: 0;
+}
+
+.middle-section div {
+  display: flex;
+  flex-direction: column;
+  width: 340px;
+}
+
+.middle-section div div {
+  margin-left: 90px;
+  width: 260px;
+}
+
+.bottom-section {
+  align-items: flex-start;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 160px;
+  width: 100%;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  margin: 5px;
+  width: 255px;
+}
+
+.card div {
+  align-items: center;
+  background-color: var(--ryza-dust);
+  border-radius: 16px;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 40px;
+  height: 65px;
+  width: 65px;
+}
+
+.card img {
+  max-width: 100%;
+}
+
+.card h3 {
+  margin: 0;
+  height: 56px;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  margin-top: 120px;
+  width: 100%;
+}
+
+footer p span {
+  font-weight: 700;
+}
+
+/** Tablet Version **/
+@media (max-width: 1320px) {
+  .top-section {
+    margin-top: 93px;
+  }
+
+  .top-section div {
+    width: 350px;
+  }
+
+  .top-section div h1 {
+    font-size: 48px;
+  }
+
+  .img-keyboard {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    content: url(../assets/tablet/image-keyboard.jpg);
+    object-fit: cover;
+    object-position: -12px 0;
+    position: absolute;
+    right: 0;
+    height: 425px;
+    width: 306px;
+  }
+
+  .pattern-square-1 {
+    display: none;
+  }
+
+  .middle-section {
+    display: grid;
+    grid-template-columns: 214px auto;
+    margin-top: 88px;
+  }
+
+  .pattern-square-2 {
+    display: none;
+  }
+
+  .img-phone-and-keyobard {
+    content: url(../assets/tablet/image-phone-and-keyboard.jpg);
+    object-fit: cover;
+    height: 320px;
+    width: 214px;
+  }
+
+  .orange-bg {
+    height: 320px;
+    width: 214px;
+  }
+
+  .img-glass-and-keyboard {
+    content: url(../assets/tablet/image-glass-and-keyboard.jpg);
+    height: 320px;
+    width: 445px;
+  }
+
+  .middle-section div {
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 16px;
+    width: 668px;
+  }
+
+  .middle-section div div {
+    flex-direction: row;
+    margin-left: 0;
+    width: 100%;
+  }
+
+  .middle-section div div h2 {
+    width: 200px;
+  }
+
+  .middle-section div div p {
+    width: 400px;
+    right: 0;
+  }
+
+  .bottom-section {
+    display: grid;
+    grid-template-columns: 270px 270px;
+    margin-top: 80px;
+  }
+
+  .card {
+    max-width: 280px;
+  }
+}
+
+/** Mobile Version **/
+@media (max-width: 612px) {
+  .top-section {
+    flex-direction: column;
+    margin-top: 40px;
+  }
+
+  .top-section div {
+    width: 100%;
+  }
+
+  .top-section div div {
+    width: 100%;
+  }
+
+  .btn-2 {
+    margin-right: 20px;
+    height: 48px;
+    width: 150px;
+  }
+
+  .img-keyboard {
+    content: url(../assets/mobile/image-keyboard.jpg);
+    margin-top: 60px;
+    object-position: 0 0;
+    position: relative;
+    height: 425px;
+    width: 100%;
+  }
+
+  .middle-section {
+    justify-content: center;
+    margin-top: 10px;
+  }
+
+  .img-phone-and-keyobard {
+    content: url(../assets/mobile/image-phone-and-keyboard.jpg);
+    margin-left: -40px;
+    height: 193px;
+    width: 129px;
+  }
+
+  .orange-bg {
+    margin-left: -40px;
+    height: 193px;
+    width: 129px;
+  }
+
+  .img-glass-and-keyboard {
+    content: url(../assets/mobile/image-glass-and-keyboard.jpg);
+    margin-left: -100px;
+    height: 193px;
+    width: 220px;
+  }
+
+  .middle-section div {
+    margin-top: 30px;
+    width: 100%;
+    min-width: 357px;
+  }
+
+  .middle-section div div {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .middle-section div div h2 {
+    text-align: center;
+  }
+
+  .middle-section div div p {
+    text-align: center;
+    width: 300px;
+  }
+
+  .bottom-section {
+    justify-content: center;
+    grid-template-columns: 270px;
+  }
+
+  .card {
+    align-items: center;
+  }
+
+  .card h3,
+  .card p {
+    text-align: center;
+  }
+}

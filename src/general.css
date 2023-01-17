@@ -1,5 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@500;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@500;700;900&display=swap');
 
+/** Default Desktop Version **/
 :root {
   --ryza-dust: rgba(241, 103, 24, 1);
   --mock-orange: rgba(255, 155, 98, 1);
@@ -28,17 +29,22 @@ h3 {
 h1 {
   font-size: 56px;
   line-height: 56px;
+  margin-top: 24px;
+  margin-bottom: 24px;
 }
 
 h2 {
   font-size: 32px;
   line-height: 36px;
+  margin-top: 22px;
+  margin-bottom: 22px;
 }
 
 h3 {
-
   font-size: 24px;
   line-height: 28px;
+  margin-top: 19px;
+  margin-bottom: 19px;
 }
 
 p {
@@ -46,4 +52,34 @@ p {
   font-weight: 500;
   font-size: 16px;
   line-height: 26px;
+  margin-top: 11px;
+  margin-bottom: 11px;
+}
+
+button {
+  cursor: pointer;
+  border: 0;
+  border-radius: 8px;
+  font-family: 'Barlow', sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 26px;
+  text-transform: uppercase;
+  transition: background-color 0.4s;
+  height: 58px;
+  width: 175px;
+}
+
+/** Tablet Version **/
+@media (max-width: 1320px) {
+  body {
+    margin: 48px 28px;
+  }
+}
+
+/** Mobile Version **/
+@media (max-width: 612px) {
+  body {
+    margin: 20px 20px;
+  }
 }
